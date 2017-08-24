@@ -3,17 +3,17 @@ import java.util.Scanner;
 public class DivingRightIn
 	{
 		static String userInput;
-		static int age;
-		static int yearDiff;
-		static int i;
-
+		static int age; 
+		static int ageDiff;
+		static int yearDiff; 
+		static int i; 
+		
 		public static void main(String[] args)
 			{
 				greetUser();
 				askAge();
 				tellAgeInYears();
-				tellAgeInDogYears();
-
+				//checkLeapYear();
 			}
 
 		private static void greetUser()
@@ -28,7 +28,7 @@ public class DivingRightIn
 			{
 				Scanner userInput = new Scanner(System.in);
 				System.out.println("How old are you?");
-				int age = userInput.nextInt();
+				age = userInput.nextInt();
 				if (age <= 16)
 					{
 						System.out.println("Okay, great!");
@@ -46,19 +46,22 @@ public class DivingRightIn
 
 		private static void tellAgeInYears()
 			{
-				for (int i = 2004; i > 1998; i--)
+				for (i = 2004; i > 1998; i--)
 					{
-						int ageDiff = 2017 - age;
-						int yearDiff = i - ageDiff;
+						ageDiff = 2017 - age;
+						yearDiff = i - ageDiff;
 						System.out.println("	In year " + i + " you were " + yearDiff);
+						int dogAge = yearDiff * 7;
+						System.out.println("	In dog years, in year " + i + " you were " + dogAge);
+						System.out.println(" ");
 					}
 			}
-
-		private static void tellAgeInDogYears()
-			{
-				int dogAge = yearDiff * 7;
-				System.out.println("	In dog years, in year " + i + " you were " + dogAge);
-				System.out.println(" ");
-			}
+		private static void checkLeapYears()
+		{
+			if (i % 400 == 0 && i % 100 == 0)
+				{
+					System.out.println("That year is a leap year!");
+				}
+		}
 
 	}
