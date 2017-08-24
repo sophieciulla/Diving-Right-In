@@ -13,7 +13,7 @@ public class DivingRightIn
 				greetUser();
 				askAge();
 				tellAgeInYears();
-				//checkLeapYear();
+				checkLeapYears();
 			}
 
 		private static void greetUser()
@@ -58,9 +58,9 @@ public class DivingRightIn
 			}
 		private static void checkLeapYears()
 		{
-			if (i % 400 == 0 && i % 100 == 0)
+			if ((i % 4 == 0))
 				{
-					System.out.println("That year is a leap year!");
+					System.out.println(i + " is a leap year!");
 				}
 		}
 
