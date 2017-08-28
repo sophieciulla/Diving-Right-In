@@ -41,6 +41,7 @@ public class DivingRightIn
 						System.out.println("Congrats! You're a legal adult");
 					}
 //hello
+				//hello again
 			}
 
 		private static void tellAgeInYears()
