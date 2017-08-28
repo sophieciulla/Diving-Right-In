@@ -7,7 +7,7 @@ public class DivingRightIn
 		static int ageDiff;
 		static int yearDiff; 
 		static int i; 
-		//hello
+		
 		public static void main(String[] args)
 			{
 				greetUser();
