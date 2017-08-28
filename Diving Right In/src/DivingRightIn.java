@@ -6,7 +6,6 @@ public class DivingRightIn
 		static int age; 
 		static int ageDiff;
 		static int yearDiff; 
-		static int i; 
 		
 		public static void main(String[] args)
 			{
@@ -46,7 +45,7 @@ public class DivingRightIn
 
 		private static void tellAgeInYears()
 			{
-				for (i = 2004; i > 1998; i--)
+				for (int i = 2004; i > 1998; i--)
 					{
 						ageDiff = 2017 - age;
 						yearDiff = i - ageDiff;
@@ -58,7 +57,8 @@ public class DivingRightIn
 			}
 		private static void checkLeapYears()
 		{
-			if ((i % 4 == 0))
+			for (int i = 0; i < )
+			if ((int year % 4 == 0))
 				{
 					System.out.println(i + " is a leap year!");
 				}
